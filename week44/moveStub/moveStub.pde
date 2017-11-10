@@ -40,13 +40,13 @@ void draw() {
     case startScreen:
       drawStartScreen();
       break;
-    case playingGame;
+    case playingGame:
       drawGame();
       break;
-    case gameOver;
+    case gameOver:
       drawGameOverScreen();
       break;
-    case gameWon;
+    case gameWon:
       drawGameWonScreen();
       break;
   }
@@ -65,11 +65,10 @@ void setupGame() {
   }
 
   PVector crossroadDemonsDirection = new PVector(random(1), random(1));
-  float diameter = 32
+  float diameter = 32;
   float speed = 2;
   float damper = 1;
   crossroadDemons.add(new crossroadDemon(crossroadDemonsPosition, crossroadDemonsDirection, diameter, speed, damper));
-  }
 }
 
 //*************

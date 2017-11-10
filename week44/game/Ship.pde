@@ -51,6 +51,7 @@ class Ship extends GameObject {
       translate(-diameter/2, 0);
       triangle(-diameter*2, 0, -diameter/5, diameter/5, -diameter/5, -diameter/5);
       popMatrix();
+      popStyle();
     }
   };
 }
