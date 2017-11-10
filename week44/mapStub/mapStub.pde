@@ -7,7 +7,7 @@ int x , y;
 void setup() {
   size(800, 600);
   smiley = loadImage("smiley.png");
-  map = new Ptmx(this, "desert.tmx");
+  map = new Ptmx(this, "crossroad.tmx");
   map.setDrawMode(CENTER);
   map.setPositionMode("MAP");
   x = int(map.getMapSize().x / 2);
