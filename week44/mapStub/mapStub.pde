@@ -29,14 +29,4 @@ void keyPressed(){
   if(keyCode == UP) y -= 1;
   if(keyCode == DOWN) y += 1;
   PVector overTile = map.canvasToMap(x, y);
-  switch(map.getTileIndex(0, round(overTile.x), round(overTile.y))){
-    case 6: case 7: case 13: case 14: case 15: case 21: case 22: case 23: case 29:
-      break;
-    case 30: case 37: case 38: case 39: case 46: case 47:
-      map.setTileIndex(0, round(overTile.x), round(overTile.y), 29);
-      break;
-    default:
-      x = prevX;
-      y = prevY;
-  }
 }
