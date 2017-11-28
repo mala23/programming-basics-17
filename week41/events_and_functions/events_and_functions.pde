@@ -6,6 +6,7 @@ void setup() {
 }
 
 void draw () {
+  background(20);
   stroke(255);
   strokeWeight(6);
   translate(width / 2, height / 2);
