@@ -1,5 +1,7 @@
 float t;
 
+final int linesCount = 10;
+
 void setup() {
   background(20);
   size(500, 500);
@@ -10,7 +12,9 @@ void draw () {
   stroke(255);
   strokeWeight(6);
   translate(width / 2, height / 2);
-  line(x1(t), y1(t), x2(t), y2(t));
+  for (int i = 0; i < linesCount; i++) {
+    line(x1(t + i), y1(t + i), x2(t + i), y2(t + i));
+  }
   t++;
 }
 
