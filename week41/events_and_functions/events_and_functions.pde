@@ -14,9 +14,9 @@ void draw () {
 }
 
 float x(float t) {
-  return t;
+  return sin(t / 10) * 100;
 }
 
 float y(float t) {
-  return sin(t / 10) * 100;
+  return cos(t / 10) * 100;
 }
