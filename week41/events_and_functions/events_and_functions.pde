@@ -14,9 +14,9 @@ void draw () {
 }
 
 float x(float t) {
-  return 0;
+  return t;
 }
 
 float y(float t) {
-  return 0;
+  return -t;
 }
