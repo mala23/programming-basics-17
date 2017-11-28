@@ -18,5 +18,5 @@ float x(float t) {
 }
 
 float y(float t) {
-  return -t;
+  return sin(t / 10) * 100;
 }
