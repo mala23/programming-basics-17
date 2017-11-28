@@ -9,8 +9,7 @@ void draw () {
   stroke(255);
   strokeWeight(6);
   translate(width / 2, height / 2);
-  point(x1(t), y1(t));
-  point(x2(t), y2(t));
+  line(x1(t), y1(t), x2(t), y2(t));
   t++;
 }
 
